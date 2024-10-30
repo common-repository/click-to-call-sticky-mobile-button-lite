@@ -1,0 +1,54 @@
+/*admin style*/
+.footerstylediv{padding: 10px;background: white;}
+/*front style*/
+#foot-cont-div{ display:none; }
+#up-arrow-foot{ position:fixed;bottom:0px;width:100%;background-color:rgba(0, 0, 0, 0.75);z-index: 99999; padding:0 0 5px;}
+span.ua-span{display:block;width:50px;margin:0px auto;float:none;border:1px solid #ffffff;border-top:none;line-height:27px; border-bottom-left-radius:3px;border-bottom-right-radius:3px;height:27px;color:#ffffff;text-align:center;cursor:pointer; font-size: 22px;}
+span.da-span{display:block;width:50px;margin:0px auto;float:none;border:1px solid #ffffff;border-top:none;line-height:23px; border-bottom-left-radius:3px;border-bottom-right-radius:3px;height:23px;color:#ffffff;text-align:center;cursor:pointer; font-size: 22px;}
+
+.shutter-down{ display:none !important; }
+.shutter-up{ display:block !important; }
+
+#mobile-contact-div{ -webkit-transition:3s;transition:3s;z-index: 9999999999; }
+.mobile-contact-div{ display:none;position:fixed;bottom:0px;width:100%;background-color:rgba(0, 0, 0, 0.75); height: 50px;}
+.mobile-contact-div .m-contact-div, .mobile-contact-div .m-tel-div{ display: inline-block; padding: 5px 0 0;}
+.mobile-contact-div .m-text-div{ text-align:center;display: inline-block; color: #fff;font-size: 13px; text-transform: uppercase; font-weight: 500; }
+.mobile-contact-div .m-contact-div a{ color: #fff; width: 35px; display: block; margin: 0 10px 0 5px; text-align:center; height: 35px; line-height: 35px; background: #ffffff; font-size: 20px; border-radius: 30px; }
+.mobile-contact-div .m-tel-div { padding-right: 15px; }
+.mobile-contact-div.horizontal_display .left-mobile .m-tel-div { padding-right: 0; }
+.mobile-contact-div .m-tel-div a { color: #fff; display: flex; align-items: center; align-content: center; justify-content: center; margin: 0 auto; text-align: center; width: 35px; height: 35px; background: #ffffff; font-size: 20px; border-radius: 30px; }
+
+.mobile-contact-div.bottom-left { left: 0; bottom: auto; top: 50%; transform: translateY(-50%); right: auto; width: auto; height: auto; padding: 5px 2px; } 
+.mobile-contact-div.bottom-left .m-text-div { display: none; } 
+.mobile-contact-div.bottom-left .m-contact-div, .mobile-contact-div.bottom-left .m-tel-div { display: block; width: auto; padding: 5px 5px;}
+.mobile-contact-div.bottom-left .m-contact-div a { margin: 0; }
+.mobile-contact-div .iconmore-list .m-tel-div svg { fill: #fff; width: 20px; height: 20px; }
+.mobile-contact-div .iconmore-list .m-tel-div img { width: 30px; }
+.mobile-contact-div.vertical_display { left: auto; right: 0;  bottom: 20px; width: auto; height: auto; padding: 5px 2px; } 
+.mobile-contact-div.vertical_display .m-text-div { display: none; } 
+.mobile-contact-div.vertical_display .m-contact-div, .mobile-contact-div.vertical_display .m-tel-div { display: block; float: none !important; width: auto; padding: 5px 5px; }
+.mobile-contact-div.vertical_display .m-contact-div a { margin: 0; }
+
+.btn.moreiconbtn { padding: 0; color: #fff; width: 35px; display: block; margin: 5px 5px 3px auto; text-align: center; height: 35px; line-height: 45px; background: #000000; font-size: 20px; border-radius: 30px; }
+.btn.moreiconbtn svg { width: 23px; height: 23px; }
+.iconmore-list { position: absolute; right: 0; bottom: 0px; background: #fff; min-width: 175px; text-align: center; padding: 7px 5px; opacity: 0; visibility: hidden; transform: translateX(100%); transition: all .5s; }
+.mobile-contact-div .iconmore-list .m-tel-div { display: inline-block !important; padding: 2px 0; vertical-align: middle; }
+.bottom-left .iconmore-list { right: auto; left: 0; transform: translateX(-100%); }
+.iconmore-list.active { right: 48px; opacity: 1; visibility: visible; transform: translateX(0); }
+.bottom-left .iconmore-list.active { right: auto; left: 52px; transform: translateX(0); }
+.mobile-contact-div .iconmore-list .m-tel-div.mtel-tree a { background: #67c15e; width: 30px; height: 30px; }
+.horizontal_display .centerbox { display: flex; justify-content: space-between; }
+.horizontal_display .right-mobile { display: flex; }
+.horizontal_display .right-mobile > .m-tel-div.mtel-facebook { display: none; }
+.horizontal_display .moreicon .iconmore-list { max-width: 185px; right: 0; bottom: 50px; }
+
+#up-arrow-foot svg, .mobile-contact-div .m-text-div svg { width: 25px; }
+
+
+@media (min-width: 980px){ #foot-cont-div{ display:none !important; } }
+@media screen and (max-width: 768px){
+	.price-button{ display:none; }
+	.mobile-contact-div{ display:block; }
+	.main-footer-margin-bottom-60px{ margin-bottom: 60px; }
+	.main-footer-margin-bottom-30px{ margin-bottom: 30px; }
+}

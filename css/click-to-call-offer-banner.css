@@ -1,0 +1,6 @@
+.seo-form-design { display: inline-flex; }
+.form-section { display: inline-flex; padding: 15px; }
+.sitelinx-banner { padding-left: 36px; position: relative; left: 117px; top: -26px; }
+.rating-btn {    margin-left: 10px;}
+
+@media screen and (min-width: 768px) .offer-div { display: block; }
